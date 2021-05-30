@@ -87,4 +87,5 @@ template <typename T>
 int BST<T>::depth() {
     return depthTree(root);
 }
+
 #endif  // INCLUDE_BST_H_
