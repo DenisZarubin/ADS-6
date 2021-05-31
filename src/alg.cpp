@@ -7,13 +7,13 @@
 
 BST<std::string> makeTree(const char* filename) {
   // поместите сюда свой код
- std::ifstream file(filename);
+std::ifstream file(filename);
 
- BST<std::string> tree;
+BST<std::string> tree;
 
- std::string word, line;
+std::string word, line;
 
- while (!file.eof()) {
+while (!file.eof()) {
     file >> word;
     int i = 0;
     while (i < word.length()) {
@@ -34,7 +34,6 @@ BST<std::string> makeTree(const char* filename) {
       }
     }
   }
-  
-  return tree;
 
+  return tree;
 }
